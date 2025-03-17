@@ -4,9 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Massetransport</title>
+    <style>
+        /* Generell styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F9F9F9;
+            color: #333;
+        }
+
+        /* Navigasjonsmeny */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #2F5D3B;
+            color: white;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hovedseksjon */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background-color: #DFF0D8;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            font-weight: bold;
+            color: #2F5D3B;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        /* Knapper */
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .button {
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .button-green {
+            background-color: #2F5D3B;
+            color: white;
+        }
+
+        .button-outline {
+            border: 2px solid #2F5D3B;
+            color: #2F5D3B;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2F5D3B;
+            color: white;
+            margin-top: 50px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Massetransport-plattform</h1>
-    <p>Denne siden er en test for plattformen.</p>
+
+    <!-- Navigasjon -->
+    <div class="navbar">
+        <div><strong>Massetransport</strong></div>
+        <div>
+            <a href="#">Hjem</a>
+            <a href="#">Om</a>
+            <a href="#">Tjenester</a>
+            <a href="#">Kontakt</a>
+        </div>
+    </div>
+
+    <!-- Hovedinnhold -->
+    <div class="hero">
+        <h1>Effektiv Samkjøring av Massetransport</h1>
+        <p>Forenkle transport og del ressurser smartere. Opprett forespørsler eller finn ledige transporter.</p>
+        <div class="button-container">
+            <a href="#" class="button button-green">Kom i gang</a>
+            <a href="#" class="button button-outline">Lær mer</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2024 Massetransport - Alle rettigheter reservert
+    </div>
+
 </body>
 </html>
+
