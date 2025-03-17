@@ -10,7 +10,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #F3F7F0; /* Lysere bakgrunn */
+            background-color: #F2F2F2; /* Lys grå bakgrunn */
             color: #333;
         }
 
@@ -20,9 +20,9 @@
             justify-content: space-between;
             align-items: center;
             padding: 15px 30px;
-            background-color: #5A9367; /* Lysere grønn */
+            background-color: #4A4A4A; /* Mørk grå */
             color: white;
-            border-radius: 0 0 20px 20px; /* Runde kanter på bunn */
+            border-radius: 0 0 20px 20px;
         }
 
         .navbar a {
@@ -31,27 +31,27 @@
             margin: 0 15px;
             font-size: 16px;
             padding: 8px 12px;
-            border-radius: 10px; /* Mer avrundet */
+            border-radius: 10px;
         }
 
         .navbar a:hover {
-            background-color: #76B88A;
+            background-color: #6A6A6A;
         }
 
         /* Hovedseksjon */
         .hero {
             text-align: center;
             padding: 80px 20px;
-            background-color: #E8F5E9; /* Lys grønn */
+            background-color: white;
             border-radius: 20px;
-            margin: 20px;
+            margin: 40px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         .hero h1 {
             font-size: 36px;
             font-weight: bold;
-            color: #2F5D3B;
+            color: #4A4A4A;
         }
 
         .hero p {
@@ -63,84 +63,46 @@
         /* Knapper */
         .button-container {
             margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
         }
 
         .button {
             padding: 14px 24px;
-            border-radius: 20px; /* Runde knapper */
+            border-radius: 20px;
             font-size: 16px;
             text-decoration: none;
             display: inline-block;
-            margin: 10px;
             transition: 0.3s;
+            width: 200px;
+            text-align: center;
         }
 
-        .button-green {
-            background-color: #5A9367;
+        .button-dark {
+            background-color: #4A4A4A;
             color: white;
         }
 
-        .button-green:hover {
-            background-color: #76B88A;
+        .button-dark:hover {
+            background-color: #6A6A6A;
         }
 
         .button-outline {
-            border: 2px solid #5A9367;
-            color: #5A9367;
+            border: 2px solid #4A4A4A;
+            color: #4A4A4A;
         }
 
         .button-outline:hover {
-            background-color: #5A9367;
+            background-color: #4A4A4A;
             color: white;
         }
-
-        /* Skjema-kontainer */
-.form-container {
-    background: white;
-    padding: 40px;
-    margin: 40px auto;
-    max-width: 500px;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-/* Gjør input-feltene like store og midtstilte */
-.form-container input,
-.form-container select {
-    width: 100%;
-    padding: 14px;
-    margin: 10px 0;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    font-size: 16px;
-    box-sizing: border-box; /* Hindrer padding fra å endre størrelse */
-}
-
-/* Justerer send-knappen */
-.form-container button {
-    width: 100%;
-    background-color: #5A9367;
-    color: white;
-    border: none;
-    padding: 14px;
-    font-size: 18px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-/* Hover-effekt på knapp */
-.form-container button:hover {
-    background-color: #76B88A;
-}
-
 
         /* Footer */
         .footer {
             text-align: center;
             padding: 20px;
-            background-color: #5A9367;
+            background-color: #4A4A4A;
             color: white;
             border-radius: 20px 20px 0 0;
             margin-top: 50px;
@@ -162,28 +124,12 @@
 
     <!-- Hovedinnhold -->
     <div class="hero">
-        <h1>Effektiv Samkjøring av Massetransport</h1>
-        <p>Forenkle transport og del ressurser smartere. Opprett forespørsler eller finn ledige transporter.</p>
+        <h1>Velg hvem du er</h1>
+        <p>Er du en transportør eller trenger du transport? Velg et alternativ for å komme i gang.</p>
         <div class="button-container">
-            <a href="#" class="button button-green">Kom i gang</a>
-            <a href="#" class="button button-outline">Lær mer</a>
+            <a href="oversikt.html" class="button button-dark">Jeg er transportør</a>
+            <a href="opprett.html" class="button button-outline">Jeg trenger transport</a>
         </div>
-    </div>
-
-    <!-- Falskt skjema for testing -->
-    <div class="form-container">
-        <h2>Legg inn en transportforespørsel</h2>
-        <input type="text" placeholder="Navn">
-        <input type="email" placeholder="E-post">
-        <select>
-            <option>Velg transporttype</option>
-            <option>Grus</option>
-            <option>Jord</option>
-            <option>Stein</option>
-        </select>
-        <input type="text" placeholder="Fra (sted)">
-        <input type="text" placeholder="Til (sted)">
-        <button>Send forespørsel</button>
     </div>
 
     <!-- Footer -->
