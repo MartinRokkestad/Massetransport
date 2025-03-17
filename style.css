@@ -1,0 +1,111 @@
+:root {
+    --primary-color: #4A4A4A; /* Hovedfarge */
+    --secondary-color: #6A6A6A; /* Sekundærfarge */
+    --background-color: #F2F2F2; /* Bakgrunnsfarge */
+    --button-color: #4A4A4A; /* Knappfarge */
+    --button-hover: #6A6A6A; /* Knapp hover */
+    --text-color: #333; /* Tekstfarge */
+}
+
+/* Generell styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Navigasjonsmeny */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 0 0 20px 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 10px;
+}
+
+.navbar a:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Hovedseksjon */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* Knapper */
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button {
+    padding: 14px 24px;
+    border-radius: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+    width: 200px;
+    text-align: center;
+}
+
+.button-dark {
+    background-color: var(--button-color);
+    color: white;
+}
+
+.button-dark:hover {
+    background-color: var(--button-hover);
+}
+
+.button-outline {
+    border: 2px solid var(--button-color);
+    color: var(--button-color);
+}
+
+.button-outline:hover {
+    background-color: var(--button-color);
+    color: white;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 20px 20px 0 0;
+    margin-top: 50px;
+}
